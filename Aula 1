@@ -1,0 +1,30 @@
+Groupleans - Site com bases de dados
+Pandas DataFrame - Site da documentação do Pandas
+
+** Códigos
+Módulo para ler arquivo CSV - Pandas
+
+import pandas as pd
+
+pd.read_csv("ratings.csv")
+
+notas = pd.read_csv("ratings.csv")
+
+notas.head() - Trás a cabeça da tabela de dados - 5 primeiros elementos.
+
+notas.shape - Trás o tamanho (linhas X colunas)
+
+** Renomear os títulos das colunas
+notas.columns = ["usuarioID", "filmesID", "nota", "momento"]
+
+** Exibir apenas uma coluna específica:
+notas['nota']
+
+** Retorna os valores únicos da série - Array - (coluna específica:
+notas['nota'].unique()
+
+** Contar os valores - Quantas vezes o valor aparece:
+notas['nota'].value_counts()
+
+** Média dos valores:
+notas['nota'].mean()
